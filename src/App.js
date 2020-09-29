@@ -1,25 +1,47 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import HeadBlock from "./components/HeadBlock/HeadBlock";
+import eastPartnersLogo from "./assets/east-partner-logo.svg";
+import gcLogo from "./assets/GC-logo.svg";
+import itnLogo from "./assets/ITN-logo.svg";
 
 function App() {
+  const partners = [
+    {
+      image: eastPartnersLogo,
+      nameLogo: "Схід економічних можливостей",
+    },
+    {
+      image: itnLogo,
+      nameLogo: "IT Nation",
+    },
+    {
+      image: gcLogo,
+      nameLogo: "Global compact network Ukraine",
+    },
+  ];
+  const navLinks = [
+    {
+      title: "Основные факты",
+      href: "#basic-facts",
+    },
+    {
+      title: "Индекс качества воздуха",
+      href: "#index-air-quality",
+    },
+    {
+      title: "Политика по уменьшению загрязнений",
+      href: "#purge-policy",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeadBlock
+        title="Качество атмосферного воздуха и здоровье"
+        links={navLinks}
+        logos={partners}
+      />
+    </>
   );
 }
 
