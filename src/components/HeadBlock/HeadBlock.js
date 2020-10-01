@@ -1,4 +1,5 @@
 import React from "react";
+import "./HeadBlock.scss";
 
 const HeadBlock = ({ title, links, logos }) => {
   const logosImages = logos.map((logoItem) => (
