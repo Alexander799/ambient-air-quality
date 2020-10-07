@@ -4,6 +4,7 @@ import HeadBlock from "./components/HeadBlock/HeadBlock";
 import eastPartnersLogo from "./assets/east-partner-logo.svg";
 import gcLogo from "./assets/GC-logo.svg";
 import itnLogo from "./assets/ITN-logo.svg";
+import CarouselFacts from "./components/CarouselFacts/CarouselFacts";
 
 function App() {
   const partners = [
@@ -41,6 +42,7 @@ function App() {
         links={navLinks}
         logos={partners}
       />
+      <CarouselFacts />
     </>
   );
 }
