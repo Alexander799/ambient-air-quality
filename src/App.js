@@ -35,6 +35,28 @@ function App() {
       href: "#purge-policy",
     },
   ];
+  const factsSlides = [
+    {
+      lnkImg = require("./assets/imgCarouselFacts/slide-1"),
+      sldDescription = "Женщины и дети – главные жертвы загрязнения воздуха"
+    },
+    {
+      lnkImg = require("./assets/imgCarouselFacts/slide-2"),
+      sldDescription = "Защитники окружающей среды подвергаются преследованиям"
+    },
+    {
+      lnkImg = require("./assets/imgCarouselFacts/slide-3"),
+      sldDescription = "Загрязнение воздуха – нарушение прав человека"
+    },
+    {
+      lnkImg = require("./assets/imgCarouselFacts/slide-4"),
+      sldDescription = "4,2 миллиона случаев преждевременной смерти людей из-за загрязнения атмосферного воздуха"
+    },
+    {
+      lnkImg = require("./assets/imgCarouselFacts/slide-5"),
+      sldDescription = "Согласно оценкам, суммарный объем затрат в связи с загрязнением воздуха превышает 5 трлн долл. в год."
+    }
+  ];
   return (
     <>
       <HeadBlock
@@ -42,7 +64,7 @@ function App() {
         links={navLinks}
         logos={partners}
       />
-      <CarouselFacts />
+      <CarouselFacts title="Основные факты" slides={factsSlides} />
     </>
   );
 }
