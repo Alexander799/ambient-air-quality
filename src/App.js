@@ -37,25 +37,32 @@ function App() {
   ];
   const factsSlides = [
     {
-      lnkImg = require("./assets/imgCarouselFacts/slide-1"),
-      sldDescription = "Женщины и дети – главные жертвы загрязнения воздуха"
+      id: "0001",
+      lnkImg: require("./assets/imgCarouselFacts/slide-1.jpg"),
+      sldDescription: "Женщины и дети – главные жертвы загрязнения воздуха",
     },
     {
-      lnkImg = require("./assets/imgCarouselFacts/slide-2"),
-      sldDescription = "Защитники окружающей среды подвергаются преследованиям"
+      id: "0002",
+      lnkImg: require("./assets/imgCarouselFacts/slide-2.jpg"),
+      sldDescription: "Защитники окружающей среды подвергаются преследованиям",
     },
     {
-      lnkImg = require("./assets/imgCarouselFacts/slide-3"),
-      sldDescription = "Загрязнение воздуха – нарушение прав человека"
+      id: "0003",
+      lnkImg: require("./assets/imgCarouselFacts/slide-3.jpg"),
+      sldDescription: "Загрязнение воздуха – нарушение прав человека",
     },
     {
-      lnkImg = require("./assets/imgCarouselFacts/slide-4"),
-      sldDescription = "4,2 миллиона случаев преждевременной смерти людей из-за загрязнения атмосферного воздуха"
+      id: "0004",
+      lnkImg: require("./assets/imgCarouselFacts/slide-4.jpg"),
+      sldDescription:
+        "4,2 миллиона случаев преждевременной смерти людей из-за загрязнения атмосферного воздуха",
     },
     {
-      lnkImg = require("./assets/imgCarouselFacts/slide-5"),
-      sldDescription = "Согласно оценкам, суммарный объем затрат в связи с загрязнением воздуха превышает 5 трлн долл. в год."
-    }
+      id: "0005",
+      lnkImg: require("./assets/imgCarouselFacts/slide-5.jpg"),
+      sldDescription:
+        "Согласно оценкам, суммарный объем затрат в связи с загрязнением воздуха превышает 5 трлн долл. в год.",
+    },
   ];
   return (
     <>
