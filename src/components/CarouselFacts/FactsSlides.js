@@ -1,9 +1,10 @@
 import React from "react";
 
-const FactsSlides = (item) => {
+const FactsSlides = ({ item }) => {
   return (
-    <div>
-      <img src={item.lnkImg} alt="slide-image" />
+    <div className="facts-slide">
+      <img src={item.lnkImg} alt="slide-image" className="facts-image" />
+      <p className="facts-desc">{item.sldDescription}</p>
     </div>
   );
 };

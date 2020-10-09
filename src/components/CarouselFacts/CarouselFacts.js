@@ -12,9 +12,16 @@ const CarouselFacts = ({ title, slides }) => {
   ));
 
   return (
-    <section className="facts-section">
+    <section className="facts">
       <h2 className="facts-title">{title}</h2>
-      <Swiper>{slidesFacts}</Swiper>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={3}
+        centeredSlides={true}
+        pagination={{ clickable: true }}
+      >
+        {slidesFacts}
+      </Swiper>
     </section>
   );
 };
