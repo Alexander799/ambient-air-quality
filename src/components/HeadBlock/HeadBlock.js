@@ -2,16 +2,21 @@ import React from "react";
 import "./HeadBlock.scss";
 
 const HeadBlock = ({ title, links, logos }) => {
-  const logosImages = logos.map((logoItem) => (
+  const logosImages = logos.map((logoItem, i) => (
     <img
       src={logoItem.image}
       alt={logoItem.nameLogo}
       className="head-partners-image"
+      key={i}
     />
   ));
 
-  const linksHead = links.map((linksItem) => (
-    <a href={linksItem.href} className="head-links-item">
+  const linksHead = links.map((linksItem, i) => (
+    <a
+      href={linksItem.href}
+      className="head-links-item"
+      key={i}
+    >
       {linksItem.title}
     </a>
   ));

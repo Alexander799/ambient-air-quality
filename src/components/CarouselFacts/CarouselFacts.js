@@ -6,8 +6,8 @@ import "swiper/swiper.scss";
 
 const CarouselFacts = ({ title, slides }) => {
   const slidesFacts = slides.map((slides) => (
-    <SwiperSlide>
-      <FactsSlides item={slides} key={slides.id} />
+    <SwiperSlide key={slides.id}>
+      <FactsSlides item={slides} />
     </SwiperSlide>
   ));
 
