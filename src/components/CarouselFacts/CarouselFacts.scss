@@ -9,7 +9,11 @@
         color: #FFFFFF;
     }
     &-slide {}
+    &-image {
+        width: 100%;
+    }
     &-desc {
+        margin-top: 40px;
         font-weight: normal;
         font-size: 27px;
         line-height: 32px;
