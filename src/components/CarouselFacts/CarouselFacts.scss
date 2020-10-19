@@ -1,5 +1,7 @@
 .facts {
-    padding: 100px 0 50px;
+    box-sizing: border-box;
+    padding: 100px 60px 50px;
+    position: relative;
     &-title {
         margin-bottom: 30px;
         font-weight: normal;
@@ -8,10 +10,6 @@
         text-align: center;
         color: #FFFFFF;
     }
-    &-slide {}
-    &-image {
-        width: 100%;
-    }
     &-desc {
         margin-top: 40px;
         font-weight: normal;
@@ -19,5 +17,24 @@
         line-height: 32px;
         text-align: center;
         color: #FFFFFF;
+    }
+    &>.swiper-button-prev,
+    .swiper-button-next {
+        color: #B78A3F;
+    }
+    &>.swiper-button-prev {
+        left: 10px;
+    }
+    &>.swiper-button-next {
+        right: 10px;
+    }
+    &-page {
+        &-bullet {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            color: #B78A3F;
+        }
     }
 }
