@@ -29,17 +29,17 @@ const CarouselFacts = ({ title, slides }) => {
           nextEl: ".swiper-button-next"
         }}
         pagination={{
-          el: ".facts-page",
+          el: ".swiper-pagination",
           clickable: true,
           renderBullet: function (index, className) {
-            return `<span class="facts-page-bullet"></span>`;
+            return `<span class="swiper-pagination-bullet"></span>`;
           }
         }}
       >
         {slidesFacts}
       </Swiper>
       <div className="swiper-button-next" />
-      <div className="facts-page" />
+      <div className="swiper-pagination" />
     </section>
   );
 };

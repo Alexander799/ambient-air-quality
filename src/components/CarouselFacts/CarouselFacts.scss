@@ -28,13 +28,22 @@
     &>.swiper-button-next {
         right: 10px;
     }
-    &-page {
-        &-bullet {
+    &>.swiper-pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &>.swiper-pagination-bullet {
             display: inline-block;
+            margin: 40px 40px 0;
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            color: #B78A3F;
+            border: 1px solid #B78A3F;
+            background: #737373;
+            opacity: 1;
+            &-active {
+                background: #B78A3F;
+            }
         }
     }
 }
