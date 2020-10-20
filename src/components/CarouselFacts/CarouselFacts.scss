@@ -28,6 +28,10 @@
     &>.swiper-button-next {
         right: 10px;
     }
+    &>.swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+        opacity: 0;
+    }
     &>.swiper-pagination {
         width: 100%;
         display: flex;
