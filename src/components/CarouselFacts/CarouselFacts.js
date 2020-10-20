@@ -23,6 +23,7 @@ const CarouselFacts = ({ title, slides }) => {
       <Swiper
         spaceBetween={50}
         slidesPerView={3}
+        slidesPerGroup={3}
         centeredSlides={true}
         navigation={{
           prevEl: ".swiper-button-prev",
